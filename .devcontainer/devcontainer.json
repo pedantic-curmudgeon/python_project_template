@@ -41,5 +41,6 @@
                 }
             }
         }
-    }
+    },
+    "postCreateCommand": "python .devcontainer/post_create.py"
 }
