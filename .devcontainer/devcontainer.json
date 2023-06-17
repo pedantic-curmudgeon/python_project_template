@@ -9,7 +9,9 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "eamodio.gitlens",
                 "ms-python.black-formatter",
+                "ms-python.isort",
                 "ms-python.pylint",
                 "ms-python.python"
             ],
@@ -20,14 +22,20 @@
                 "files.insertFinalNewline": false,
                 "files.trimFinalNewlines": true,
                 "files.trimTrailingWhitespace": true,
+                "isort.args": [
+                    "--profile",
+                    "black"
+                ],
                 "pylint.args": [
                     "--rcfile=pylintrc"
                 ],
                 "python.formatting.provider": "none",
                 "python.linting.lintOnSave": true,
                 "python.linting.pylintEnabled": true,
-                // Does this actually need to operate as an override?
                 "[python]": {
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": true
+                    },
                     "editor.defaultFormatter": "ms-python.black-formatter",
                     "editor.formatOnSave": true
                 }
