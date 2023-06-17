@@ -1,23 +1,33 @@
 {
     "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker": {}
+        "docker-in-docker": {
+            "version": "latest",
+            "moby": false
+        }
     },
     "customizations": {
         "vscode": {
+            "extensions": [
+                "ms-python.pylint",
+                "ms-python.python",
+                "ms-python.black-formatter"
+            ],
             "settings": {
                 "files.insertFinalNewline": false,
                 "files.trimFinalNewlines": true,
                 "files.trimTrailingWhitespace": true,
+                "pylint.args": [
+                    "--rcfile=pylintrc"
+                ],
+                "python.linting.pylintEnabled": true,
+                "python.linting.lintOnSave": true,
+                "python.formatting.provider": "none",
                 "[python]": {
                     "editor.defaultFormatter": "ms-python.black-formatter",
                     "editor.formatOnSave": true
-                },
-                "python.formatting.provider": "none"
-            },
-            "extensions": [
-                "ms-python.black-formatter"
-            ]
+                }
+            }
         }
     }
 }
