@@ -1,0 +1,23 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker": {}
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.insertFinalNewline": false,
+                "files.trimFinalNewlines": true,
+                "files.trimTrailingWhitespace": true,
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true
+                },
+                "python.formatting.provider": "none"
+            },
+            "extensions": [
+                "ms-python.black-formatter"
+            ]
+        }
+    }
+}
