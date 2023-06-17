@@ -9,20 +9,24 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "ms-python.black-formatter",
                 "ms-python.pylint",
-                "ms-python.python",
-                "ms-python.black-formatter"
+                "ms-python.python"
             ],
             "settings": {
+                "editor.rulers": [
+                    80
+                ],
                 "files.insertFinalNewline": false,
                 "files.trimFinalNewlines": true,
                 "files.trimTrailingWhitespace": true,
                 "pylint.args": [
                     "--rcfile=pylintrc"
                 ],
-                "python.linting.pylintEnabled": true,
-                "python.linting.lintOnSave": true,
                 "python.formatting.provider": "none",
+                "python.linting.lintOnSave": true,
+                "python.linting.pylintEnabled": true,
+                // Does this actually need to operate as an override?
                 "[python]": {
                     "editor.defaultFormatter": "ms-python.black-formatter",
                     "editor.formatOnSave": true
