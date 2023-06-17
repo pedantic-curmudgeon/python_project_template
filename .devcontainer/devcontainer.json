@@ -1,4 +1,5 @@
 {
+    "name": "Python Project Template",
     "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "features": {
         "docker-in-docker": {
@@ -19,7 +20,7 @@
                 "editor.rulers": [
                     80
                 ],
-                "files.insertFinalNewline": false,
+                "files.insertFinalNewline": true,
                 "files.trimFinalNewlines": true,
                 "files.trimTrailingWhitespace": true,
                 "isort.args": [
