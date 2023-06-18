@@ -10,8 +10,12 @@ def main() -> None:
 
     # Install requirements.
     requirements_path = repo_path / "requirements.txt"
-    if requirements_path.exists():
-        run(f"pip install -r {requirements_path}", check=True, shell=True)
+    run(f"pip install -r {requirements_path}", check=True, shell=True)
+
+    # Install development requirements.
+    dev_requirements_path = repo_path / "dev-requirements.txt"
+    run(f"pip install -r {dev_requirements_path}", check=True, shell=True)
+    run("pre-commit install", check=True, shell=True)
 
 
 if __name__ == "__main__":
