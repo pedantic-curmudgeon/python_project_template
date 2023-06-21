@@ -23,7 +23,7 @@
             "settings": {
                 "autoDocstring.docstringFormat": "google-notypes",
                 "editor.rulers": [
-                    80
+                    88
                 ],
                 "files.insertFinalNewline": true,
                 "files.trimFinalNewlines": true,
