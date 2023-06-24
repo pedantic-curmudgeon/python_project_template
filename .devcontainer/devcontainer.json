@@ -13,6 +13,7 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "DavidAnson.vscode-markdownlint",
                 "eamodio.gitlens",
                 "GitHub.vscode-github-actions",
                 "ms-python.black-formatter",
@@ -26,6 +27,9 @@
                 "editor.rulers": [
                     88
                 ],
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.markdownlint": true
+                },
                 "files.insertFinalNewline": true,
                 "files.trimFinalNewlines": true,
                 "files.trimTrailingWhitespace": true,
@@ -33,6 +37,9 @@
                     "--profile",
                     "black"
                 ],
+                "[markdown]": {
+                    "editor.formatOnSave": true
+                },
                 "pylint.args": [
                     "--rcfile=pylintrc"
                 ],
