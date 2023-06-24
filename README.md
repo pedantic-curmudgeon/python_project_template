@@ -8,7 +8,7 @@ A Python project template.
 4. Dependabot configurations to update requirements.
 5. A GitHub workflow which runs pre-commit on pull requests.
 
-### Known Issues
+## Known Issues
 1. All Visual Studio Code extensions may not be fully-operational immediately after the
 Dev Container is built. This is a known issue with several related issues already
 opened with Microsoft. To work around this issue, after the Dev Container is built,
