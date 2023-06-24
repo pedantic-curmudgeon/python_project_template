@@ -12,7 +12,8 @@ A Python project template.
 
 ## Known Issues
 
-1. All Visual Studio Code extensions may not be fully-operational immediately after the
-Dev Container is built. This is a known issue with several related issues already
-opened with Microsoft. To work around this issue, after the Dev Container is built,
-navigate to the Command Palette and run the command `Developer: Reload Window`.
+1. All VS Code extensions may not be fully-operational immediately after the Dev
+Container is built. This is related to race conditions when installing extensions in VS
+Code. There are several related issues open with Microsoft. To work around this issue,
+after the Dev Container is built, navigate to the Command Palette and run the Developer:
+Reload Window command to refresh VS Code.
