@@ -38,7 +38,8 @@ repos:
     - id: isort
       name: isort (python)
       args: [
-        "--profile black"
+        "--profile",
+        "black"
       ]
 
 - repo: local
