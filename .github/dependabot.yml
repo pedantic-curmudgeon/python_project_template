@@ -1,13 +1,11 @@
 version: 2
 updates:
-  # Python dependencies.
-  - package-ecosystem: "pip"
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
 
-  # GitHub Actions dependencies.
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "monthly"
