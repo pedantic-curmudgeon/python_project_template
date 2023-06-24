@@ -4,6 +4,11 @@ repos:
   hooks:
   - id: codespell
 
+- repo: https://github.com/DavidAnson/markdownlint-cli2
+  rev: v0.8.1
+  hooks:
+  - id: markdownlint-cli2
+
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.4.0
   hooks:
