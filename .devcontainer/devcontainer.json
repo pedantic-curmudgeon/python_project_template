@@ -56,5 +56,5 @@
             }
         }
     },
-    "postCreateCommand": "python .devcontainer/post_create.py"
+    "updateContentCommand": "python .devcontainer/update_content.py"
 }
