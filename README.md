@@ -12,6 +12,14 @@ A Python project template.
 1. [A GitHub workflow which runs pytest.](.github/workflows/pytest.yml)
 1. [A GitHub workflow which runs pre-commit and pytest on pull requests.](.github/workflows/pr.yml)
 
+## Requirements
+
+1. [VS Code](https://code.visualstudio.com/)
+1. [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+1. [Docker](https://www.docker.com/)
+
+**Note:** Required for use outside of GitHub Codespaces.
+
 ## Known Issues
 
 1. All VS Code extensions may not be fully-operational after the Dev Container is first
