@@ -20,10 +20,7 @@ A Python project template.
 
 *Required for use outside of GitHub Codespaces.*
 
-## Known Issues
+## Troubleshooting
 
-1. All VS Code extensions may not be fully-operational after the Dev Container is first
-built. This is related to race conditions when installing extensions in VS Code. There
-are several related issues open with Microsoft. To work around this issue, after the Dev
-Container is built, open the Command Palette and run the Developer: Reload Window
-command to refresh VS Code.
+If a VS Code extension is not working, open the Command Palette and run the Developer:
+Reload Window command to refresh VS Code.
