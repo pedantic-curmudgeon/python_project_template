@@ -1,4 +1,4 @@
-"""An example test."""
+"""An example test module."""
 
 
 def test_example() -> None:
