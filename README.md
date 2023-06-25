@@ -18,7 +18,7 @@ A Python project template.
 1. [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 1. [Docker](https://www.docker.com/)
 
-**Note:** Required for use outside of GitHub Codespaces.
+*Required for use outside of GitHub Codespaces.*
 
 ## Known Issues
 
