@@ -27,10 +27,3 @@ jobs:
 
       - name: Run Pytest
         run: python /tests/run_pytest.py
-
-      - name: Upload Pytest Results
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: pytest_results
-          path: tests/pytest_results.xml
