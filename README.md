@@ -4,7 +4,7 @@ A Python project template.
 
 ## Includes
 
-1. [A Dev Container](.devcontainer/devcontainer.json).
+1. [A Dev Container.](.devcontainer/devcontainer.json)
 1. [Visual Studio Code code quality extensions and configurations.](.devcontainer/devcontainer.json#L14-L58)
 1. [Pre-commit code quality configurations.](.pre-commit-config.yaml)
 1. [Dependabot configurations to update requirements.](.github/dependabot.yml)
