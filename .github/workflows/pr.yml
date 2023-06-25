@@ -10,3 +10,7 @@ jobs:
   pre_commit:
     name: Pre-Commit
     uses: ./.github/workflows/pre_commit.yml
+
+  pytest:
+      name: Pytest
+      uses: ./.github/workflows/pytest.yml
