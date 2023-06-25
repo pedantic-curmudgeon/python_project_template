@@ -4,12 +4,13 @@ A Python project template.
 
 ## Includes
 
-1. A Dev Container.
-2. Visual Studio Code code quality extensions and configurations.
-3. Pre-commit code quality configurations.
-4. Dependabot configurations to update requirements.
-5. A GitHub workflow which runs pre-commit on pull requests.
-6. A GitHub workflow which runs pytest on pull requests.
+1. [A Dev Container](.devcontainer/devcontainer.json).
+1. [Visual Studio Code code quality extensions and configurations.](.devcontainer/devcontainer.json#L14-L58)
+1. [Pre-commit code quality configurations.](.pre-commit-config.yaml)
+1. [Dependabot configurations to update requirements.](.github/dependabot.yml)
+1. [A GitHub workflow which runs pre-commit.](.github/workflows/pre_commit.yml)
+1. [A GitHub workflow which runs pytest.](.github/workflows/pytest.yml)
+1. [A GitHub workflow which runs pre-commit and pytest on pull requests.](.github/workflows/pr.yml)
 
 ## Known Issues
 
