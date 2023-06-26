@@ -1,0 +1,60 @@
+{
+    "name": "Python Project Template",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+        "docker-in-docker": {
+            "version": "latest",
+            "moby": false
+        }
+    },
+    "containerEnv": {
+        "PYTHONPATH": "${containerWorkspaceFolder}/../"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "DavidAnson.vscode-markdownlint",
+                "eamodio.gitlens",
+                "GitHub.vscode-github-actions",
+                "ms-python.black-formatter",
+                "ms-python.isort",
+                "ms-python.pylint",
+                "ms-python.python",
+                "njpwerner.autodocstring"
+            ],
+            "settings": {
+                "autoDocstring.docstringFormat": "google-notypes",
+                "editor.rulers": [
+                    88
+                ],
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.markdownlint": true
+                },
+                "files.insertFinalNewline": true,
+                "files.trimFinalNewlines": true,
+                "files.trimTrailingWhitespace": true,
+                "isort.args": [
+                    "--profile",
+                    "black"
+                ],
+                "[markdown]": {
+                    "editor.formatOnSave": true
+                },
+                "pylint.args": [
+                    "--rcfile=pylintrc"
+                ],
+                "python.formatting.provider": "none",
+                "python.linting.lintOnSave": true,
+                "python.linting.pylintEnabled": true,
+                "[python]": {
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": true
+                    },
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true
+                }
+            }
+        }
+    },
+    "updateContentCommand": "python .devcontainer/update_content.py"
+}
