@@ -10,7 +10,9 @@ def run_pytest() -> int:
     return run(
         args=(
             "pytest",
-            "--verbose",
+            "--numprocesses=auto",
+            "--durations=0",
+            "--verbosity=2",
             Path(__file__).resolve().parent,
         ),
         check=False,
