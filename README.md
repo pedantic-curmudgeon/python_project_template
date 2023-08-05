@@ -8,6 +8,7 @@ A Python project template.
 1. [Visual Studio Code code quality extensions and configurations.](.devcontainer/devcontainer.json#L14-L58)
 1. [Pre-commit code quality configurations.](.pre-commit-config.yaml)
 1. [Dependabot configurations to update requirements.](.github/dependabot.yml)
+1. [A script which runs pytest.](tests/run_pytest.py)
 1. [A GitHub workflow which runs pre-commit.](.github/workflows/pre_commit.yml)
 1. [A GitHub workflow which runs pytest.](.github/workflows/pytest.yml)
 1. [A GitHub workflow which runs pre-commit and pytest on pull requests.](.github/workflows/pr.yml)
