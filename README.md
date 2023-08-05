@@ -20,6 +20,23 @@ A Python project template.
 
 *Required for use outside of GitHub Codespaces.*
 
+## Running Tests
+
+### GitHub
+
+Open a pull request.
+
+### Local Environment
+
+Execute the following commands:
+
+```shell
+cd tests/
+python run_pytest.py
+```
+
+*This will create `htmlcov/`, `coverage.xml`, and `results.xml` in the `tests/` folder.*
+
 ## Troubleshooting
 
 If a VS Code extension is not working, open the Command Palette and run the Developer:
