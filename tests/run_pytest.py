@@ -10,10 +10,15 @@ def run_pytest() -> int:
     return run(
         args=(
             "pytest",
+            Path(__file__).resolve().parent,
             "--numprocesses=auto",
             "--durations=0",
             "--verbosity=2",
-            Path(__file__).resolve().parent,
+            "--junitxml=results.xml",
+            "--cov=../",
+            "--cov-report=term",
+            "--cov-report=html",
+            "--cov-report=xml",
         ),
         check=False,
     ).returncode
