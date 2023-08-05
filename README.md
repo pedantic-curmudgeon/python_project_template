@@ -31,8 +31,7 @@ Open a pull request.
 Execute the following commands:
 
 ```shell
-cd tests/
-python run_pytest.py
+python tests/run_pytest.py
 ```
 
 *This will create `htmlcov/`, `coverage.xml`, and `results.xml` in the `tests/` folder.*

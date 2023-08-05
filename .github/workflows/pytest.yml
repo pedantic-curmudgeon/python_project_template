@@ -26,16 +26,11 @@ jobs:
         run: pip install -r requirements.txt -r dev-requirements.txt
 
       - name: Run Pytest
-        run: |
-          cd tests/
-          python run_pytest.py
+        run: python run_pytest.py
 
       - name: Upload Results
         uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: results
           path: |
-            tests/htmlcov
-            tests/coverage.xml
-            tests/results.xml
+            tests/results
