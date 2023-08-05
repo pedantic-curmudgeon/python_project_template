@@ -28,13 +28,14 @@ Open a pull request.
 
 ### Local Environment
 
-Execute the following commands:
+Execute the following command:
 
 ```shell
 python tests/run_pytest.py
 ```
 
-*This will create `htmlcov/`, `coverage.xml`, and `results.xml` in the `tests/` folder.*
+*This will create `htmlcov/`, `coverage.xml`, and `results.xml` in the `tests/results`
+folder.*
 
 ## Troubleshooting
 
