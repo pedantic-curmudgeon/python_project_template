@@ -26,7 +26,7 @@ jobs:
         run: pip install -r requirements.txt -r dev-requirements.txt
 
       - name: Run Pytest
-        run: python run_pytest.py
+        run: python tests/run_pytest.py
 
       - name: Upload Results
         uses: actions/upload-artifact@v3
