@@ -24,12 +24,13 @@
             ],
             "settings": {
                 "autoDocstring.docstringFormat": "google-notypes",
-                "editor.rulers": [
-                    88
-                ],
+                "black-formatter.importStrategy": "fromEnvironment",
                 "editor.codeActionsOnSave": {
                     "source.fixAll.markdownlint": true
                 },
+                "editor.rulers": [
+                    88
+                ],
                 "files.insertFinalNewline": true,
                 "files.trimFinalNewlines": true,
                 "files.trimTrailingWhitespace": true,
@@ -37,15 +38,14 @@
                     "--profile",
                     "black"
                 ],
+                "isort.importStrategy": "fromEnvironment",
                 "[markdown]": {
                     "editor.formatOnSave": true
                 },
+                "pylint.importStrategy": "fromEnvironment",
                 "pylint.args": [
                     "--rcfile=pylintrc"
                 ],
-                "python.formatting.provider": "none",
-                "python.linting.lintOnSave": true,
-                "python.linting.pylintEnabled": true,
                 "[python]": {
                     "editor.codeActionsOnSave": {
                         "source.organizeImports": true
