@@ -1,5 +1,6 @@
 """Run pytest."""
 
+
 import sys
 from pathlib import Path
 from subprocess import run
