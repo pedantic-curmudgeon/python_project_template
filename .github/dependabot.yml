@@ -7,7 +7,7 @@ updates:
     groups:
       all:
         patterns:
-          '*'
+          - "*"
 
   - package-ecosystem: "pip"
     directory: "/"
@@ -16,4 +16,4 @@ updates:
     groups:
       all:
         patterns:
-          '*'
+          - "*"
