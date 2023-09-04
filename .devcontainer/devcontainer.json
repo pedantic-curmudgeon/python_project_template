@@ -25,9 +25,6 @@
             "settings": {
                 "autoDocstring.docstringFormat": "google-notypes",
                 "black-formatter.importStrategy": "fromEnvironment",
-                "editor.codeActionsOnSave": {
-                    "source.fixAll.markdownlint": true
-                },
                 "editor.rulers": [
                     88
                 ],
@@ -40,6 +37,9 @@
                 ],
                 "isort.importStrategy": "fromEnvironment",
                 "[markdown]": {
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": true
+                    },
                     "editor.formatOnSave": true
                 },
                 "pylint.importStrategy": "fromEnvironment",
